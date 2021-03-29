@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Répertoire de contact</title>
+</head>
+<body>
+    <main>
+    <header>
+        <h1>Répertoire de contact</h1>
+    </header>
+    <section>
+        <div id="formulaire">
+            <h2>Formulaire de contact</h2>
+            <form>
+                <div class="champ_all"><label for="prenom">Prénom</label><input type="text" class="block space" id = "prenom"></div>
+                <div class="champ_all"><label for="nom">Nom</label><input type="text" class="block space" id="nom"></div>
+                <div class="champ_all"><label for="groupe">Groupe</label><select class="block space" id="groupe">
+                    <option hidden selected  value="">Veuillez choisir un groupe</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">3</option>
+                </select></div>
+                <div class="champ_all"><label for="bio">Bio</label><textarea cols="30" rows="10" class="block space" id="bio"></textarea></div>
+                <div class="champ_all img-icon">
+                    <label for="image" id="label-img"><img src="photo-gallery.png" alt="" class="img"></label><input type="file" id="image" class="block">
+                    <div><img class="img-preview" src="#" alt></div>
+                </div>   
+                <button class="champ_all btn crea " id="btncreer">Créer</button>
+                <button class="champ_all btn reinit" id="btnreinit">Réinitialiser</button>
+            </form>
+        </div>
+        <div id="list">
+            <h2>List de contacts</h2>
+            
+        </div>
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
