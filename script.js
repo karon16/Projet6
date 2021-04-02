@@ -12,7 +12,7 @@ let imgPreview = document.querySelector('.img-preview')
 
 let contacts;
 
-image.addEventListener("change", function (e) {
+image.addEventListener("input", function (e) {
     e.preventDefault();
     if (image.files[0]) {
     imgPreview.src = URL.createObjectURL(image.files[0]);
