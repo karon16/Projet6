@@ -52,7 +52,7 @@ function carteContact(contacts){
     divInfo.classList.add("contact-info");
 
     let spanIdentite = document.createElement('span');
-    spanIdentite.classList.add()
+    spanIdentite.classList.add('group')
     spanIdentite.textContent = contacts.prenom + ' ' + contacts.nom;
 
     let spanGroupe = document.createElement('span');
@@ -76,10 +76,10 @@ function carteContact(contacts){
     divInfo.appendChild(spanGroupe);
     divInfo.appendChild(pBiographie);
 
-    btnReinit.addEventListener('click', (e) =>{
-        e.preventDefault();
-        listeContact.remove();
-    })
+    // btnReinit.addEventListener('click', (e) =>{
+    //     e.preventDefault();
+    //     listeContact.remove();
+    // })
     
 
 }

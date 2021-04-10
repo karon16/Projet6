@@ -46,11 +46,6 @@ section{
     box-shadow: 0px 0px 27px -7px rgba(0, 0, 0, 0.1);
     overflow-y: scroll;
     word-break: break-all;
-    -ms-overflow-style: none; 
-    scrollbar-width: none;  
-}
-#list::-webkit-scrollbar {
-    display: none;
 }
 
 h2{
@@ -177,18 +172,15 @@ input[type = "file"]{
 }
 
 .contact-list-element p{
-    font-size: 1.em;
+    font-size: 1rem;
     margin-top: 5px;
-    
-
 }
 
-.contact-list-element span{
+.contact-list-element .group{
     font-weight: bold;
     font-size: 1.2em;
     margin-top: 2px;
     margin-right: 5px;
-    
 
 }
 .group{
